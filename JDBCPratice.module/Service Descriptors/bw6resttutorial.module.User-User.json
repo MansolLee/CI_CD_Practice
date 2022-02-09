@@ -1,0 +1,93 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1.0",
+    "title" : "User",
+    "description" : "User service"
+  },
+  "host" : "localhost:8080",
+  "basePath" : "/",
+  "schemes" : [ "http" ],
+  "paths" : {
+    "/user" : {
+      "post" : {
+        "summary" : "postUser",
+        "description" : "postUser",
+        "operationId" : "post-user",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json", "application/xml" ],
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "description" : "",
+          "schema" : {
+            "$ref" : "#/definitions/User"
+          },
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a Response to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/Response"
+            }
+          }
+        }
+      },
+      "get" : {
+        "summary" : "getUser",
+        "description" : "getUser",
+        "operationId" : "get-user",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json", "application/xml" ],
+        "parameters" : [ {
+          "name" : "USER_ID",
+          "in" : "query",
+          "description" : "",
+          "type" : "integer",
+          "format" : "int64",
+          "required" : false
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a User to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/User"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "Response" : {
+      "type" : "object",
+      "required" : [ "ResponseCode" ],
+      "properties" : {
+        "ResponseCode" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "ResponseMessage" : {
+          "type" : "string"
+        },
+        "UserReference" : {
+          "type" : "integer",
+          "format" : "int64"
+        }
+      }
+    },
+    "User" : {
+      "type" : "object",
+      "required" : [ "UserName", "UserStatus" ],
+      "properties" : {
+        "UserName" : {
+          "type" : "string"
+        },
+        "UserStatus" : {
+          "type" : "string"
+        }
+      }
+    }
+  }
+}

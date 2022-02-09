@@ -1,0 +1,12 @@
+{"records": [
+    {
+        "jsonSchemaLocation": "/JDBCPratice.module/Service Descriptors/bw6resttutorial.module.User-User.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.example.com/namespaces/tns/1643104694878"
+    },
+    {
+        "jsonSchemaLocation": "/JDBCPratice.module/Service Descriptors/bw6resttutorial.module.User-User.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.example.com/namespaces/tns/1643104812146"
+    }
+]}

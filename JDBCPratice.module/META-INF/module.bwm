@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:rest="http://xsd.tns.tibco.com/bw/models/binding/rest" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_xOjkQH3BEeyFNeAfo0Iqwg" targetNamespace="http://tns.tibco.com/bw/composite/JDBCPratice.module" name="JDBCPratice.module" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:service xmi:id="_zxW7Yn3FEeyFNeAfo0Iqwg" name="user" promote="ComponentUser/user">
+    <sca:interface.wsdl xmi:id="_zxXic33FEeyFNeAfo0Iqwg" interface="http://xmlns.example.com/20220125190147PLT#wsdl.interface(user)" scaext:wsdlLocation="../Processes/bw6resttutorial/module/User.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_zxalwH3FEeyFNeAfo0Iqwg" name="RestService" path="/user" docBasePath="http://localhost:7777/JDBCPratice.module" docResourcePath="User" basePath="/" connector="bw6resttutorial.module.User" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/bw6resttutorial.module.User-User.json">
+      <operation xmi:id="_zxbz4H3FEeyFNeAfo0Iqwg" operationName="post" nickname="post-user" httpMethod="POST" notes="postUser" responseStyle="element" requestStyle="element" outputPartName="Response">
+        <clientFormat>json</clientFormat>
+        <clientFormat>xml</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <operation xmi:id="_zxbz4X3FEeyFNeAfo0Iqwg" operationName="get" nickname="get-user" httpMethod="GET" notes="getUser" responseStyle="element" outputPartName="Response">
+        <parameters xmi:id="_IY4jkH3HEeyFNeAfo0Iqwg">
+          <parameterMapping xmi:id="_IY4jkX3HEeyFNeAfo0Iqwg" parameterName="USER_ID" parameterType="Query" dataType="integer#int64"/>
+        </parameters>
+        <clientFormat>json</clientFormat>
+        <clientFormat>xml</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_zxmzAH3FEeyFNeAfo0Iqwg"/>
+      <advancedConfig xmi:id="_zxalwX3FEeyFNeAfo0Iqwg" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_zxbz4n3FEeyFNeAfo0Iqwg" bindingName="RestService"/>
+  </sca:service>
+  <sca:property xmi:id="_xTYZ4H3BEeyFNeAfo0Iqwg" name="BW.DEPLOYMENTUNIT.TYPE" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_xTeggH3BEeyFNeAfo0Iqwg" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_xTix8H3BEeyFNeAfo0Iqwg" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_xTnqcH3BEeyFNeAfo0Iqwg" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_xTsi8H3BEeyFNeAfo0Iqwg" name="BW.DOMAIN.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_xTxbcH3BEeyFNeAfo0Iqwg" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_xT1s4H3BEeyFNeAfo0Iqwg" name="BW.APPSPACE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_xT6lYH3BEeyFNeAfo0Iqwg" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_xT-20H3BEeyFNeAfo0Iqwg" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:component xmi:id="_zxVtQH3FEeyFNeAfo0Iqwg" name="ComponentUser" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_zxVtQX3FEeyFNeAfo0Iqwg" processName="bw6resttutorial.module.User"/>
+    <sca:service xmi:id="_zxW7YH3FEeyFNeAfo0Iqwg" name="user">
+      <sca:interface.wsdl xmi:id="_zxW7YX3FEeyFNeAfo0Iqwg" interface="http://xmlns.example.com/20220125190147PLT#wsdl.interface(user)" scaext:wsdlLocation="../Processes/bw6resttutorial/module/User.bwp"/>
+    </sca:service>
+  </sca:component>
+</sca:composite>
