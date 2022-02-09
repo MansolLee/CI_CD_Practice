@@ -1,8 +1,8 @@
-Manifest-Version: 1.0.0.202202091552
+Manifest-Version: 1.0.0.202202091559
 Bundle-ManifestVersion: 2
 Bundle-Name: BW6RESTTutorial Module
 Bundle-SymbolicName: JDBCPratice.module
-Bundle-Version: 1.0.0.202202091552
+Bundle-Version: 1.0.0.202202091559
 Bundle-Vendor: TIBCO Software Inc.
 TIBCO-BW-ApplicationModule: META-INF/module.bwm
 TIBCO-BW-ConfigProfile: META-INF/default.substvar
