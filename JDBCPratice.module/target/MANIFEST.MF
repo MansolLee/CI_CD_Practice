@@ -1,18 +1,19 @@
-Manifest-Version: 1.0.0.202202081940
+Manifest-Version: 1.0.0.202202091552
 Bundle-ManifestVersion: 2
 Bundle-Name: BW6RESTTutorial Module
 Bundle-SymbolicName: JDBCPratice.module
-Bundle-Version: 1.0.0.202202081940
+Bundle-Version: 1.0.0.202202091552
 Bundle-Vendor: TIBCO Software Inc.
 TIBCO-BW-ApplicationModule: META-INF/module.bwm
 TIBCO-BW-ConfigProfile: META-INF/default.substvar
 TIBCO-BW-Edition: bwe
 TIBCO-BW-JobSharedVariables: META-INF/module.jsv
 Require-Capability: com.tibco.bw.model; filter:="(name=bwext)",com.tibco
- .bw.palette; filter:="(name=bw.generalactivities)",com.tibco.bw.palette
- ; filter:="(name=bw.jdbc)",com.tibco.bw.sharedresource.model; filter:="
- (name=bw.httpconnector)",com.tibco.bw.sharedresource.model; filter:="(n
- ame=bw.jdbc)",com.tibco.bw.binding.model; filter:="(name=bw.rest)"
+ .bw.module; filter:="(&(name=Shared_Module)(version=1.0.0))",com.tibco.
+ bw.palette; filter:="(name=bw.generalactivities)",com.tibco.bw.palette;
+  filter:="(name=bw.jdbc)",com.tibco.bw.sharedresource.model; filter:="(
+ name=bw.httpconnector)",com.tibco.bw.sharedresource.model; filter:="(na
+ me=bw.jdbc)",com.tibco.bw.binding.model; filter:="(name=bw.rest)"
 TIBCO-BW-ModuleSharedVariables: META-INF/module.msv
 TIBCO-BW-Version: 6.8.0 V55 2021-11-10
 Bundle-ClassPath: .
