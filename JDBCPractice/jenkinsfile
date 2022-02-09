@@ -1,0 +1,31 @@
+pipeline {
+	agent any
+	
+	stages {
+		stage('Hello') {
+			steps {
+				echo 'Hello성공이다'
+			}
+		}
+		stage('Build') {
+			steps {
+				echo 'Build성공이다'
+			}
+		}
+		stage('Deploy') {
+			steps {
+				echo 'Deploy성공이다'
+			}
+		}
+		stage('Test') {
+			steps {
+				echo 'Test성공이다'
+			}
+		}
+		stage('Release') {
+			steps {
+				echo 'Release성공이다'
+			}
+		}
+	}
+}
