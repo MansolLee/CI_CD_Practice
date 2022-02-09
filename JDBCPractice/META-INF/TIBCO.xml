@@ -65,11 +65,86 @@
       <packaging:scalable>true</packaging:scalable>
       <packaging:overrideValue>false</packaging:overrideValue>
     </packaging:property>
+    <packaging:property>
+      <packaging:name>//Shared_Module//BW.DEPLOYMENTUNIT.TYPE</packaging:name>
+      <packaging:type>xsd:string</packaging:type>
+      <packaging:visibility>private</packaging:visibility>
+      <packaging:scalable>true</packaging:scalable>
+      <packaging:overrideValue>false</packaging:overrideValue>
+    </packaging:property>
+    <packaging:property>
+      <packaging:name>//Shared_Module//BW.APPNODE.NAME</packaging:name>
+      <packaging:type>xsd:string</packaging:type>
+      <packaging:visibility>private</packaging:visibility>
+      <packaging:scalable>true</packaging:scalable>
+      <packaging:overrideValue>false</packaging:overrideValue>
+    </packaging:property>
+    <packaging:property>
+      <packaging:name>//Shared_Module//BW.DEPLOYMENTUNIT.NAME</packaging:name>
+      <packaging:type>xsd:string</packaging:type>
+      <packaging:visibility>private</packaging:visibility>
+      <packaging:scalable>true</packaging:scalable>
+      <packaging:overrideValue>false</packaging:overrideValue>
+    </packaging:property>
+    <packaging:property>
+      <packaging:name>//Shared_Module//BW.HOST.NAME</packaging:name>
+      <packaging:type>xsd:string</packaging:type>
+      <packaging:visibility>private</packaging:visibility>
+      <packaging:scalable>true</packaging:scalable>
+      <packaging:overrideValue>false</packaging:overrideValue>
+    </packaging:property>
+    <packaging:property>
+      <packaging:name>//Shared_Module//BW.DOMAIN.NAME</packaging:name>
+      <packaging:type>xsd:string</packaging:type>
+      <packaging:visibility>private</packaging:visibility>
+      <packaging:scalable>true</packaging:scalable>
+      <packaging:overrideValue>false</packaging:overrideValue>
+    </packaging:property>
+    <packaging:property>
+      <packaging:name>//Shared_Module//BW.DEPLOYMENTUNIT.VERSION</packaging:name>
+      <packaging:type>xsd:string</packaging:type>
+      <packaging:visibility>private</packaging:visibility>
+      <packaging:scalable>true</packaging:scalable>
+      <packaging:overrideValue>false</packaging:overrideValue>
+    </packaging:property>
+    <packaging:property>
+      <packaging:name>//Shared_Module//BW.APPSPACE.NAME</packaging:name>
+      <packaging:type>xsd:string</packaging:type>
+      <packaging:visibility>private</packaging:visibility>
+      <packaging:scalable>true</packaging:scalable>
+      <packaging:overrideValue>false</packaging:overrideValue>
+    </packaging:property>
+    <packaging:property>
+      <packaging:name>//Shared_Module//BW.MODULE.VERSION</packaging:name>
+      <packaging:type>xsd:string</packaging:type>
+      <packaging:visibility>private</packaging:visibility>
+      <packaging:scalable>true</packaging:scalable>
+      <packaging:overrideValue>false</packaging:overrideValue>
+    </packaging:property>
+    <packaging:property>
+      <packaging:name>//Shared_Module//BW.MODULE.NAME</packaging:name>
+      <packaging:type>xsd:string</packaging:type>
+      <packaging:visibility>private</packaging:visibility>
+      <packaging:scalable>true</packaging:scalable>
+      <packaging:overrideValue>false</packaging:overrideValue>
+    </packaging:property>
+    <packaging:property>
+      <packaging:name>//Shared_Module//port</packaging:name>
+      <packaging:type>xsd:int</packaging:type>
+      <packaging:visibility>public</packaging:visibility>
+      <packaging:scalable>true</packaging:scalable>
+      <packaging:overrideValue>false</packaging:overrideValue>
+    </packaging:property>
   </packaging:properties>
   <packaging:modules>
     <packaging:module>
       <packaging:symbolicName>JDBCPratice.module</packaging:symbolicName>
       <packaging:technologyType>bw-appmodule</packaging:technologyType>
+      <packaging:technologyVersion>1.0.0.qualifier</packaging:technologyVersion>
+    </packaging:module>
+    <packaging:module>
+      <packaging:symbolicName>Shared_Module</packaging:symbolicName>
+      <packaging:technologyType>osgi-bundle,bw-sharedmodule</packaging:technologyType>
       <packaging:technologyVersion>1.0.0.qualifier</packaging:technologyVersion>
     </packaging:module>
   </packaging:modules>
