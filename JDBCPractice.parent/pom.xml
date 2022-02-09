@@ -9,7 +9,6 @@
   <modules>
     <module>../JDBCPratice.module</module>
     <module>../JDBCPractice</module>
-    <module>../Shared_Module</module>
   </modules>
   <properties>
   	 <!-- Build Encoding UTF-8 Setting -->
